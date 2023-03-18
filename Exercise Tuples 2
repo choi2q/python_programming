@@ -1,0 +1,250 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNk1rpFQKxk2gZ5JulTjcHb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/choi2q/python_programming/blob/main/Exercise%20Tuples%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cQaxNSMTP8tq",
+        "outputId": "4408b6f6-41a4-4b13-b8c4-10f8b83809be"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('pop',\n",
+              " 'rock',\n",
+              " 'soul',\n",
+              " 'hard rock',\n",
+              " 'soft rock',\n",
+              " 'R&B',\n",
+              " 'progressive rock',\n",
+              " 'disco')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ],
+      "source": [
+        "# Quiz on Tuples\n",
+        "\n",
+        "# sample tuple\n",
+        "\n",
+        "genres_tuple = (\"pop\", \"rock\", \"soul\", \"hard rock\", \"soft rock\", \\\n",
+        "                \"R&B\", \"progressive rock\", \"disco\") \n",
+        "genres_tuple"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# (문제) Find the length of the tuple, genres_tuple:\n",
+        "\n",
+        "len(genres_tuple)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Dj7xsuQSQT5t",
+        "outputId": "959af8e6-c8bd-4345-d3fc-31168ea36061"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "8"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# (문제) Access the element, with respect to index 3:\n",
+        "\n",
+        "genres_tuple[3]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "ItNxehwBQlHN",
+        "outputId": "763d6b42-aadd-49bb-f9c0-f2cadeec9ea4"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'hard rock'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# (문제) Use slicing to obtain indexes 3, 4 and 5:\n",
+        "\n",
+        "genres_tuple[3:6]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BTVTCr2SRldc",
+        "outputId": "0bbaadaf-c68b-4efc-f7c1-8fc368ecb75d"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('hard rock', 'soft rock', 'R&B')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# (문제) Find the first two elements of the tuple genres_tuple:\n",
+        "\n",
+        "genres_tuple[0:2]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UKllSY-DR7Bj",
+        "outputId": "b61dfad7-acea-45e0-d590-c48f8a576c3b"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "('pop', 'rock')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# (문제) Find the first index of \"disco\":\n",
+        "\n",
+        "genres_tuple.index(\"disco\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fMj0fUe-STCJ",
+        "outputId": "705eb7a9-d89b-4392-97a6-bf42a1245f52"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "7"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 21
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# (문제)Generate a sorted List from the Tuple C_tuple=(-5, 1, -3):\n",
+        "\n",
+        "C_tuple = (-5, 1, -3)\n",
+        "C_list = sorted(C_tuple)\n",
+        "C_list"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R-vudEWLSm3t",
+        "outputId": "93d9299e-14bd-4de5-eb4f-d26bb679f6d6"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[-5, -3, 1]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "2rwKWIgRQQCt"
+      }
+    }
+  ]
+}
