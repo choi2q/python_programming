@@ -1,0 +1,107 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO6Ksw1EUfdGnh37NvPYfVx",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/choi2q/python_programming/blob/main/Functions_2022165751_%EC%B5%9C%EC%9D%B8%EA%B7%9C\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 11,
+      "metadata": {
+        "id": "ZubcvpV7c5Dz"
+      },
+      "outputs": [],
+      "source": [
+        "#Quiz on Functions\n",
+        "\n",
+        "#1. Come up with a function that divides the first input by the second input:\n",
+        "\n",
+        "def div(a, b):\n",
+        "    return(a/b)\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#2. Use the function con for the following question.\n",
+        "\n",
+        "def con(a, b):\n",
+        "    return(a + b)\n",
+        "\n",
+        "con(2, 2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WQM78-pKePIH",
+        "outputId": "1d6c2f28-fdeb-4492-f325-04cc1373774a"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3.Can the con function we defined before be used to concentrate a list or tuple?\n",
+        "\n",
+        "con(['a', 1], ['b', 1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UL7lCtINepMu",
+        "outputId": "967d4e6e-365e-47c2-fe41-9af2cb3f909c"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['a', 1, 'b', 1]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    }
+  ]
+}
